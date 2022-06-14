@@ -16,6 +16,7 @@ target_include_directories(
     ${EXE_NAME} PUBLIC "${CMAKE_BINARY_DIR}/project_config/include"
 )
 target_include_directories(${EXE_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/include")
+target_include_directories(${EXE_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/deps")
 target_include_directories(${EXE_NAME} PUBLIC "${INCLUDE_DIR}")
 enable_sanitizers(${EXE_NAME})
 set_target_warnings(${EXE_NAME})
