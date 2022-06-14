@@ -1,0 +1,20 @@
+#ifndef SCOTCH_PROJECT_CONFIG_HPP
+#define SCOTCH_PROJECT_CONFIG_HPP
+#include <string_view>
+
+namespace @CMAKE_PROJECT_NAME@::project {
+namespace version {
+    static constexpr std::string_view full = "@PROJECT_VERSION@";
+    static constexpr int major = @PROJECT_VERSION_MAJOR@;
+    static constexpr int minor = @PROJECT_VERSION_MINOR@;
+    static constexpr int patch = @PROJECT_VERSION_PATCH@;
+}
+namespace dirs{
+    static constexpr std::string_view src = "${CMAKE_SOURCE_DIR}/src";
+}
+static constexpr std::string_view name = "@PROJECT_NAME@";
+static constexpr std::string_view description = "@PROJECT_DESCRIPTION@";
+static constexpr std::string_view url = "@PROJECT_HOMEPAGE_URL@";
+}
+
+#endif  // SCOTCH_PROJECT_CONFIG_HPP

@@ -1,0 +1,9 @@
+{
+  "name": "scc",
+  "version-string": "0.1.0",
+  "description": "Scotch containers. A container library for use with the scotch programming language compiler",
+  "dependencies": [
+    "tl-expected",
+    "catch2"
+  ]
+}

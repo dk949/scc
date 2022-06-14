@@ -1,0 +1,5 @@
+function(UNSET_FUNCTION func)
+    function(${func})
+        message(FATAL_ERROR "Calling a deleted function \"${CMAKE_CURRENT_FUNCTION}\"")
+    endfunction()
+endfunction()
