@@ -21,6 +21,7 @@ endmacro ()
 _enable_stat(
     cppcheck
     --suppress=missingInclude
+    --suppress=noExplicitConstructor
     --enable=all
     --inline-suppr
     --inconclusive
